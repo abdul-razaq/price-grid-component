@@ -10,12 +10,12 @@
 }
 
 :root {
-  /* colors */
-  --color-primary-cyan: hsl(179, 62%, 43%);
-  --color-primary-brightYellow: hsl(71, 73%, 54%);
+	/* colors */
+	--color-primary-cyan: hsl(179, 62%, 43%);
+	--color-primary-brightYellow: hsl(71, 73%, 54%);
 
-  --color-grey-light: hsl(204, 43%, 93%);
-  --color-grey-blue: hsl(218, 22%, 67%);
+	--color-grey-light: hsl(204, 43%, 93%);
+	--color-grey-blue: hsl(218, 22%, 67%);
 }
 
 html {
@@ -25,6 +25,57 @@ html {
 
 body {
 	font-size: 1.6rem;
-  font-family: 'Karla', sans-serif;
-  font-weight: 400;
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+}
+
+.component {
+	margin: 7rem auto;
+	max-width: 45%;
+	border-radius: 1rem;
+	box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+.header {
+	padding: 3rem;
+}
+
+.header__title {
+	font-size: 2.5rem;
+	color: var(--color-primary-cyan);
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.header__subtitle {
+  color: var(--color-primary-brightYellow);
+  margin-bottom: 1rem;
+}
+
+.header__description {
+  line-height: 2.5rem;
+  color: var(--color-grey-blue);
+}
+
+.footer {
+	border: 1px solid red;
+	display: flex;
+}
+
+.subscription {
+	border: 1px solid green;
+}
+
+.features {
+	border: 1px solid blueviolet;
+}
+
+@media screen and (max-width: 375px) {
+	.component {
+		max-width: none;
+	}
+
+	.footer {
+		flex-flow: column wrap;
+	}
 }
