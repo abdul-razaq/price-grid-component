@@ -12,12 +12,12 @@
 :root {
 	/* colors*/
 	--color-primary-cyan: hsl(179, 62%, 43%);
-	--color-secondary-cyan:  hsla(179, 62%, 43%, 0.884);
+	--color-secondary-cyan: hsla(179, 62%, 43%, 0.884);
 	--color-primary-brightYellow: hsl(71, 73%, 54%);
 	--color-primary-darkYellow: hsl(71, 63%, 49%);
 
 	--color-grey-light: hsl(204, 43%, 93%);
-	--color-grey-light2:hsla(203, 44%, 93%, 0.795);
+	--color-grey-light2: hsla(203, 44%, 93%, 0.795);
 	--color-grey-blue: hsl(218, 22%, 67%);
 	--color-white: #fff;
 
@@ -50,6 +50,7 @@ body {
 	max-width: 45%;
 	border-radius: 1rem;
 	box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.25);
+	overflow: hidden;
 }
 
 .header {
@@ -79,7 +80,7 @@ body {
 }
 
 .subscription {
-	padding: 3rem;
+	padding: var(--space-around);
 	background-color: var(--color-primary-cyan);
 
 	&__title {
@@ -110,8 +111,8 @@ body {
 		padding: 1.5rem 10rem;
 		color: currentColor;
 		background-color: var(--color-primary-brightYellow);
-		border-radius: 5px;
-		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 0.5rem;
+		box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 		font-family: inherit;
 		font-weight: 700;
 		cursor: pointer;
