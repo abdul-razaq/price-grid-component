@@ -124,6 +124,7 @@ body {
 
 		&:hover {
 			background-color: var(--color-primary-darkYellow);
+			animation: pulsate 1s infinite;
 		}
 	}
 }
@@ -143,6 +144,23 @@ body {
 	font-size: 1.4rem;
 	margin-bottom: 0.2rem;
 	color: var(--color-grey-light2);
+}
+
+@keyframes pulsate {
+	0% {
+		transform: scale(1);
+		box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	50% {
+		transform: scale(1.2);
+		box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.25);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+	}
 }
 
 @media screen and (max-width: 375px) {
